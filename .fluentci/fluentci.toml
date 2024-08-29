@@ -1,0 +1,8 @@
+[[steps]]
+name = "Install dependencies"
+command = ["fluentci run --wasm bun install"]
+
+[[steps]]
+name = "Run gradle assemble"
+command = ["fluentci run --wasm android assemble_release"]
+working_directory = "android"
